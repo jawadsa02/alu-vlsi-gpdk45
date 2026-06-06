@@ -68,13 +68,26 @@ flowchart TB
 | **DRC** (Design Rule Check) | ✅ Clean — layout meets all gpdk45 design rules |
 | **LVS** (Layout vs. Schematic) | ✅ Clean — layout netlist matches schematic netlist |
 
+## 🖼️ Design Gallery
+
+| Schematics | Layout & Signoff |
+|---|---|
+| ![Adder schematic](docs/screenshots/adder_schematic.jpeg) | ![Adder layout](docs/screenshots/adder_layout.png) |
+| *Knowles adder — schematic* | *Knowles adder — physical layout* |
+| ![Subtractor](docs/screenshots/subtractor_schematic.png) | ![Routing](docs/screenshots/layout_routing_connections.png) |
+| *Subtractor (adder + inverters, 6-bit out)* | *Inter-block routing* |
+| ![GP cell](docs/screenshots/gp_cell_schematic.jpeg) | ![DRC clean](docs/screenshots/drc_clean_result.png) |
+| *GP cell — prefix-tree first stage* | *DRC run — clean ✅* |
+
+**Full set in [`docs/screenshots/`](docs/screenshots/)** — all registers (4/5/6-bit), Black/Gray cells, LVS comparison, Quantus RC extraction, area & density report, and 14 simulation waveforms. Complete write-up: [`docs/alu-final-report.pdf`](docs/alu-final-report.pdf).
+
 ## 📁 Repository Structure
 
 ```
 .
 ├── docs/
-│   ├── final-report.pdf      # Full design report (schematics, layouts, DRC/LVS)
-│   └── screenshots/          # Schematic & layout captures per block
+│   ├── alu-final-report.pdf  # Full design report (schematics, layouts, DRC/LVS)
+│   └── screenshots/          # 33 captures: schematics, layouts, DRC/LVS, extraction, waveforms
 └── README.md
 ```
 
