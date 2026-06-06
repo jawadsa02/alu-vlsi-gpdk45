@@ -1,0 +1,17 @@
+# Cadence Virtuoso — NEVER commit licensed PDK or design databases
+*.cdslck
+*.cdslck.*
+.cadence/
+simulation/
+*.log
+libManager.log
+virtuoso.log
+CDS.log*
+panic*.log
+
+# gpdk45 PDK is licensed — do not publish
+gpdk45/
+*.oa
+
+# OS
+.DS_Store
