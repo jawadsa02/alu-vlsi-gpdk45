@@ -21,6 +21,8 @@ Team project: a complete **ALU datapath** built full-custom on the generic 45 nm
 
 I worked through the full flow — logic design, schematic capture, floorplanning, layout, and signoff. The arithmetic core uses a **Knowles parallel-prefix adder** (balanced wiring, low fan-out) with synchronous register banks on the inputs and outputs.
 
+A companion [AI verification co-pilot](https://github.com/jawadsa02/ai-verification-copilot) demo runs the same ADD/SUB/AND/OR/XOR checking methodology on a 4-bit ALU in the browser — [live demo](https://jawadsa02.github.io/ai-verification-copilot/).
+
 ```mermaid
 flowchart LR
     LOGIC[Logic design] --> SCH[Schematic capture]
